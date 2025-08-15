@@ -1,0 +1,41 @@
+Se desea crear una aplicación de gestión de tareas en Node.js 
+utilizando la librería Express y la base de datos MongoDB con Mongoose. 
+La aplicación tendrá dos rutas: una para crear una nueva tarea y 
+otra para obtener todas las tareas existentes en la base de datos. 
+La aplicación permitirá crear tareas con un título y una descripción, 
+y obtener todas las tareas existentes en la base de datos con su título y descripción.
+
+Logica de negocio:
+
+La aplicación de gestión de tareas tendrá como objetivo permitir a los usuarios crear 
+nuevas tareas y obtener una lista de todas las tareas existentes en la base de datos. 
+Cada tarea tendrá un título y una descripción. Los datos de entrada serán el título y 
+la descripción de la tarea a crear. Los datos de salida serán la tarea creada y 
+la lista de todas las tareas existentes en la base de datos con su título y descripción.
+
+Requerimientos funcionales:
+
+* Crear una nueva tarea con título y descripción.
+* Obtener todas las tareas existentes en la base de datos con su título y descripción.
+
+Requerimientos no funcionales:
+
+* La aplicación debe estar escrita en Node.js utilizando la librería Express y la base de
+ datos MongoDB con Mongoose.
+* La aplicación debe tener dos rutas: una para crear una nueva tarea y otra para obtener
+ todas las tareas existentes en la base de datos.
+* La aplicación debe ser capaz de manejar errores de manera adecuada.
+
+Pasos a realizar:
+
+1.Instalar las dependencias necesarias: Express, Mongoose
+2.Configurar la conexión a la base de datos MongoDB utilizando Mongoose.
+3.Definir un modelo de tarea utilizando Mongoose.
+4.Crear dos rutas en la aplicación: una para crear una nueva tarea y otra para obtener 
+todas las tareas existentes en la base de datos.
+5.En la ruta de creación de tarea, validar los datos de entrada y crear una nueva 
+tarea en la base de datos utilizando el modelo definido.
+6.En la ruta de obtención de todas las tareas, obtener todas las tareas existentes 
+en la base de datos utilizando el modelo definido.
+7.Manejar los errores de manera adecuada y devolver las respuestas correspondientes
+ a cada solicitud.

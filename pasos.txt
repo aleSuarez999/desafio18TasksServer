@@ -1,0 +1,36 @@
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiYWRtaW4iOnRydWUsImlhdCI6MTUxNjIzOTAyMn0.KMUFsIDTnFmyG3nMiGM6H9FNFUROf3wh7SmqJp-QV30
+
+encabezado
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OWU2NzExNjU1Zjc4YWQxNTA2MWQ5MiIsImlhdCI6MTc1NTIxMTUzN30.HpRPYdQL-Nq-Er7Q-qGI2oLsKRSAAxZ1GvvYzyTduB0
+
+
+
+1) crear el index.js
+	instalar dotenv
+	crear .env con el url de la base
+
+2) crear el server express
+	instalar express
+	instalo npm install --save-dev nodemon	
+	
+	crear funcion principal const api () =>
+	
+	server.use(express.json) // especificar el handler
+	
+	agregar dotenv.config() para leer el .env
+		se trae asi lo que se necesita
+		const EXPRESS_PORT = process.env.EXPRESS_PORT
+	
+	agrego en el package.json
+
+		"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"dev": "nodemon index.js"
+	
+	a partir de ahora npm run dev
+		
+3) Crear las rutas para los endpoints
+
+		const route = express.Router()
+		ej anterior const newTask = { id: newId, text }
