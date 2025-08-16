@@ -10,7 +10,10 @@ console.log("Carga de rutas") // esto se carga al iniciar el server
 route
     .get("/", getTasks)
     .post("/", [
-    body("text").isString()
+    body("title").isString()
+                .isLength({min: 5, max: 50})
+                .withMessage("Ingrese entre 5 y 50 Caracteres"),
+    body("descript").isString()
                 .isLength({min: 10, max: 100})
                 .withMessage("Ingrese entre 10 y 100 Caracteres"),
     validationErrorResponse
