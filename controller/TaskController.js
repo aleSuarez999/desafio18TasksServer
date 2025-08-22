@@ -36,10 +36,9 @@ export const createTask = async (req, res) => {
                     msg: "El producto no se ha creado correctamente"
                 })
             }
- 
-           // remuevo campos
-            //const newTask = { _id, createdAt, updatedAt, __v, ...task}
+
             const { _id, createdAt, updatedAt, __v, ...newTask} = task.toObject()
+            //const { _id, createdAt, updatedAt, __v, ...newTask} = task._doc
             res.json({
                 ok: true,
                 msg: "tarea agregada",
@@ -57,10 +56,11 @@ export const createTask = async (req, res) => {
 }
 export const getTasks = async (req, res) => {
      console.log("llega a getTasks")
- 
+     
     try {
         const tasks = await Task.find()
         // traigo todas las tareas
+        console.log(tasks)
         res.json({
             ok: true,
             tasks: tasks

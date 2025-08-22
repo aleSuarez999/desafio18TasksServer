@@ -10,7 +10,7 @@
 	
 	crear funcion principal const api () =>
 	
-	server.use(express.json) // especificar el handler
+	server.use(express.json()) // especificar el handler
 	
 	agregar dotenv.config() para leer el .env
 		se trae asi lo que se necesita
@@ -28,3 +28,22 @@
 
 		const route = express.Router()
 		ej anterior const newTask = { id: newId, text }
+
+
+
+-----------------------
+
+npm i express mongoose dotenv express-validator
+
+npm install --save-dev nodemon
+
+crear index.js
+
+agregar dev : nodemon index.js en el package.json
+
+//sequelize es para migrar varias bases
+
+crear controller, 
+
+crear rutas para llamar al controller
+

@@ -5,11 +5,13 @@ import { dbConnection } from "./database/dbConection.js"
 
 const server = express()
 
+import cors from "cors" // esto es para poder llamar desde el mismo localhost a la api
+
 const api = async () => {
    
     dotenv.config() // agrega las variables del .env
     const EXPRESS_PORT = process.env.EXPRESS_PORT
-   
+    server.use(cors())
     server.use(express.json())
     
     await dbConnection()

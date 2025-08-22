@@ -6,6 +6,7 @@ import { createTask, getTasks } from "../controller/TaskController.js"
 //todas las tareas existentes en la base de datos.
 
 const route = express.Router()
+
 console.log("Carga de rutas") // esto se carga al iniciar el server
 route
     .get("/", getTasks)
